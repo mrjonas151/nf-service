@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço de nota fiscal</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <header>
+                <h1 id="titulo">Emissão de Nota Fiscal de Serviço</h1>
+        </header>
+
+
+    <div id="main-content">
+            <label for="valorServico">Valor do Serviço: </label>
+            <input type="number" id="valorServico" placeholder="Digite o valor do serviço"><br>
+
+            <label for="imposto">Taxa de Imposto (%): </label>
+            <input type="number" id="imposto" placeholder="Digite a taxa de imposto"><br>
+
+            <button onclick="calcularNotaFiscal()">Emitir Nota Fiscal 🔎</button>
+
+            <div id="notaFiscal">
+                <h2 id="resultado">Nota Fiscal</h2>
+                <p><strong>Valor do Serviço:</strong> <span id="valorExibicao"></span></p>
+                <p><strong>Taxa de Imposto:</strong> <span id="impostoExibicao"></span></p>
+                <p><strong>Imposto a Pagar:</strong> <span id="impostoPagar"></span></p>
+                <p><strong>Total:</strong> <span id="totalPagar"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/home.js"></script>
+</body>
+</html>
